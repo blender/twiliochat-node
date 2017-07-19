@@ -1,0 +1,31 @@
+{
+  "name": "Twilio Chat Node Application",
+  "description": "Twilio Chat Node Application",
+  "repository": "https://github.com/blender/twiliochat-node",
+  "logo": "https://static1.twilio.com/packages/company/img/logos_icon_round.png",
+  "keywords": [
+    "twilio",
+    "client",
+    "mobile",
+    "chat"
+  ],
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio Account Sid",
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your Twilio Auth Token",
+      "required": true
+    },
+    "TWILIO_API_SECRET": {
+      "description": "Twilio API secret",
+      "required": true
+    },
+    "TWILIO_IPM_SERVICE_SID": {
+      "description": "Twilio Service ID",
+      "required": true
+    }
+  }
+}
+
