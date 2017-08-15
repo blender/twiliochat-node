@@ -22,7 +22,7 @@ function TokenGenerator(identity, deviceId) {
     process.env.TWILIO_ACCOUNT_SID,
     process.env.TWILIO_AUTH_TOKEN,
     process.env.TWILIO_API_SECRET,
-    { ttl : 60 }
+    { ttl : 300 }
   );
 
   token.addGrant(ipmGrant);
