@@ -21,7 +21,8 @@ function TokenGenerator(identity, deviceId) {
   const token = new AccessToken(
     process.env.TWILIO_ACCOUNT_SID,
     process.env.TWILIO_AUTH_TOKEN,
-    process.env.TWILIO_API_SECRET
+    process.env.TWILIO_API_SECRET,
+    { ttl : 60 }
   );
 
   token.addGrant(ipmGrant);
