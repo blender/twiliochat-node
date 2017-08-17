@@ -3,7 +3,7 @@ const twilio = require('twilio');
 const AccessToken = twilio.jwt.AccessToken;
 const IpMessagingGrant = AccessToken.IpMessagingGrant;
 
-function TokenGenerator(identity, deviceId) {
+function TokenGenerator(identity, deviceId, ttl) {
   const appName = 'TwilioChat';
 
   // Create a unique ID for the client on their current device
@@ -22,7 +22,7 @@ function TokenGenerator(identity, deviceId) {
     process.env.TWILIO_ACCOUNT_SID,
     process.env.TWILIO_AUTH_TOKEN,
     process.env.TWILIO_API_SECRET,
-    { ttl : 300 }
+    { ttl : ttl }
   );
 
   token.addGrant(ipmGrant);
