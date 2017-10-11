@@ -14,7 +14,8 @@ function TokenGenerator(identity, deviceId, ttl) {
   const ipmGrant = new IpMessagingGrant({
     serviceSid: process.env.TWILIO_IPM_SERVICE_SID,
     endpointId: endpointId,
-    pushCredentialSid: "CRd44eac00320905a797e58973aaaf2c22",
+//     pushCredentialSid: "CRd44eac00320905a797e58973aaaf2c22",
+    pushCredentialSid: "CR220911ddb543d8015dafd4d5db9f5f3b"
   });
 
   // Create an access token which we will sign and return to the client,
